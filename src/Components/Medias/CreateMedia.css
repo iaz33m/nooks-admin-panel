@@ -1,0 +1,10 @@
+.uploadArea{
+  background:#f4f4f4;
+  border-radius:6px;
+  padding:10px;
+  margin: 5px;
+}
+.uploadArea:hover {
+  background:#eaeaea;
+  cursor:pointer;
+}
