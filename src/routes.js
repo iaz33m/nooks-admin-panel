@@ -17,6 +17,11 @@ const Tags = Loadable({
   loading: Loading
 });
 
+const Complaints = Loadable({
+  loader: () => import("./Components/Complaints/Complaints"),
+  loading: Loading
+});
+
 const ProductTypes = Loadable({
   loader: () => import("./Components/ProductTypes/ProductTypes"),
   loading: Loading
@@ -80,6 +85,7 @@ const routes = [
   { path: "/logout", name: "Logout", component: Logout },
   { path: "/transactions", name: "Transactions", component: Transactions },
   { path: "/tags", name: "Tags", component: Tags },
+  { path: "/complaints", name: "Complaints", component: Complaints },
   { path: "/productTypes", name: "ProductTypes", component: ProductTypes },
   { path: "/users", name: "Users", component: Users },
   { path: "/promos", name: "Promotions", component: Promos },

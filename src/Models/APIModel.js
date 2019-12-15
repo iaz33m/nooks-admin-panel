@@ -1,4 +1,4 @@
 class APIModel {
-  static HOST = "http://foodbackend.applet.solutions/api/v1/en/";
+  static HOST = "http://localhost:8000/api/v1/en/";
 }
 export default APIModel;

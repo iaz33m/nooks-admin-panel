@@ -24,6 +24,12 @@ export default {
       permission:'tag-list-all'
     },
     {
+      name: 'Complaints',
+      url: '/complaints',
+      icon: 'fa fa-cubes',
+      permission:'complaint-list'
+    },
+    {
       name: 'Product Types',
       url: '/productTypes',
       icon: 'fa fa-sitemap',

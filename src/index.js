@@ -9,6 +9,7 @@ import authReducer from "./Store/Reducers/AuthReducer";
 import transactionsReducer from "./Store/Reducers/TransactionsReducer";
 import metaDataReducer from "./Store/Reducers/MetaDataReducer";
 import roleAndPermissionsReducer from "./Store/Reducers/RoleAndPermissionsReducer";
+import ComplaintsReducer from "./Store/Reducers/ComplaintsReducer";
 import tagsReducer from "./Store/Reducers/TagsReducer";
 import productTypesReducer from "./Store/Reducers/ProductTypesReducer";
 import usersReducer from "./Store/Reducers/UsersReducer";
@@ -26,18 +27,19 @@ import App from "./App";
 
 const rootReducer = combineReducers({
   auth: authReducer,
-  transactions:transactionsReducer,
-  metaData:metaDataReducer,
-  roleAndPermissions:roleAndPermissionsReducer,
-  tags:tagsReducer,
-  productTypes:productTypesReducer,
-  users:usersReducer,
-  restaurants:RestaurantReducer,
-  promos:PromoReducer,
-  medias:MediaReducer,
-  orders:OrderReducer,
-  categories:CategoryReducer,
-  products:ProductReducer,
+  transactions: transactionsReducer,
+  metaData: metaDataReducer,
+  roleAndPermissions: roleAndPermissionsReducer,
+  complaints: ComplaintsReducer,
+  tags: tagsReducer,
+  productTypes: productTypesReducer,
+  users: usersReducer,
+  restaurants: RestaurantReducer,
+  promos: PromoReducer,
+  medias: MediaReducer,
+  orders: OrderReducer,
+  categories: CategoryReducer,
+  products: ProductReducer,
 });
 
 const store = createStore(rootReducer, compose(applyMiddleware(thunk)));
