@@ -18,49 +18,11 @@ export default {
       permission:'transaction-list'
     },
     {
-      name: 'Tags',
-      url: '/tags',
-      icon: 'fa fa-cubes',
-      permission:'tag-list-all'
-    },
-    {
-      name: 'Complaints',
-      url: '/complaints',
+      name: 'Complains',
+      url: '/complains',
       icon: 'fa fa-cubes',
       permission:'complaint-list'
     },
-    {
-      name: 'Product Types',
-      url: '/productTypes',
-      icon: 'fa fa-sitemap',
-      permission:'productType-list-all'
-    }
-    ,
-    {
-      name: 'Promotions',
-      url: '/promos',
-      icon: 'fa fa-gift',
-      permission:'promo-list'
-    },
-    {
-      name: 'Restaurants',
-      url: '/restaurants',
-      icon: 'fa fa-cutlery',
-      permission:'restaurant-list'
-    },
-    {
-      name: 'Medias',
-      url: '/medias',
-      icon: 'fa fa-camera',
-      permission:'media-list'
-    },
-    {
-      name: 'Orders',
-      url: '/orders',
-      icon: 'fa fa-shopping-cart',
-      permission:'order-list'
-    }
-    ,
     {
       name: 'Users',
       url: '/users',

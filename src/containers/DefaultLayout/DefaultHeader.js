@@ -12,14 +12,14 @@ const defaultProps = {};
 
 class DefaultHeader extends Component {
   render() {
-
     return (
       <React.Fragment>
         <AppSidebarToggler className="d-lg-none" display="md" mobile />
-        <AppNavbarBrand
+        {/* <AppNavbarBrand
           full={{ src: logo, height: 40, alt: 'Rabbit Logo' }}
           minimized={{ src: logo, height: 50, alt: 'Rabbit Logo' }}
-        />
+        /> */}
+        <h4> Nooks.pk</h4>
         <AppSidebarToggler className="d-md-down-none" display="lg" />
         <Nav className="ml-auto" navbar/>
       </React.Fragment>

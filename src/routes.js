@@ -85,7 +85,7 @@ const routes = [
   { path: "/logout", name: "Logout", component: Logout },
   { path: "/transactions", name: "Transactions", component: Transactions },
   { path: "/tags", name: "Tags", component: Tags },
-  { path: "/complaints", name: "Complaints", component: Complaints },
+  { path: "/complains", name: "Complaints", component: Complaints },
   { path: "/productTypes", name: "ProductTypes", component: ProductTypes },
   { path: "/users", name: "Users", component: Users },
   { path: "/promos", name: "Promotions", component: Promos },

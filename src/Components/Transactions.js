@@ -96,13 +96,10 @@ class Transactions extends Component {
       return (<tr key={tr.id}>
         <td>{tr.id}</td>
         <td>{tr.sub_total}</td>
-        <td>{tr.delivery_fee}</td>
-        <td>{tr.points}</td>
         <td>{tr.discount}</td>
         <td>{tr.total}</td>
         <td>{tr.service_fee}</td>
         <td>{tr.payment_method}</td>
-        <td>{tr.checkout_tr_id}</td>
       </tr>);
     });
   };
@@ -157,13 +154,10 @@ class Transactions extends Component {
                     <tr>
                       <th>ID</th>
                       <th>Sub Total</th>
-                      <th>Delivery Fee</th>
-                      <th>Points</th>
                       <th>Discount</th>
                       <th>Total</th>
                       <th>Service Fee</th>
                       <th>Payment Method</th>
-                      <th>2checkout ID</th>
                     </tr>
                   </thead>
                   <tbody>

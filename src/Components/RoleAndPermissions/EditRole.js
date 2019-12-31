@@ -110,7 +110,7 @@ class EditRole extends Component {
     return (
       <React.Fragment>
         <Button color="primary" onClick={this.toggle} className="mr-1">
-          <i className="fa fa-pencil"/> Edit Role
+          <i className="fa fa-pencil"/>
         </Button>
         <Modal  isOpen={this.state.isOpen} toggle={this.toggle} className="modal-primary modal-lg">
           <ModalHeader toggle={this.toggle}><i className="fa fa-pencil"/> Edit Role</ModalHeader>

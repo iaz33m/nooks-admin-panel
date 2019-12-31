@@ -64,18 +64,21 @@ class EditComplaint extends Component {
           <i className="fa fa-pencil" /> Edit
         </Button>
         <Modal isOpen={this.state.isOpen} toggle={this.toggle} className="modal-primary">
-          <ModalHeader toggle={this.toggle}><i className="fa fa-pencil" /> Edit Tag</ModalHeader>
+          <ModalHeader toggle={this.toggle}><i className="fa fa-pencil" /> Edit</ModalHeader>
           <ModalBody>
             <FormGroup>
               <Label htmlFor="description">Description</Label>
-              <Input type="text" name="description" placeholder="Description" value={this.state.description} onChange={e => { this.setState({ description: e.target.value }) }} />
+              <Input type="textarea" disabled rows={10} name="description" placeholder="Description" value={this.state.description} onChange={e => { this.setState({ description: e.target.value }) }} />
             </FormGroup>
 
             <FormGroup>
               <Label htmlFor="type">Type</Label>
-              <select className='form-control' name="type" placeholder="Type" value={this.state.type} onChange={e => { this.setState({ type: e.target.value }) }} >
+              <select disabled className='form-control' name="type" placeholder="Type" value={this.state.type} onChange={e => { this.setState({ type: e.target.value }) }} >
                 <option value='complain'>Complain</option>
-                </select>
+                <option value='Electricity'>Electricity</option>
+                <option value='Internet'>Internet</option>
+                <option value='Food'>Food</option>
+              </select>
             </FormGroup>
 
             <FormGroup>

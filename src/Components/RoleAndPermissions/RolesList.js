@@ -58,7 +58,7 @@ class RolesList extends Component {
           </Col>
           <Col md="8">
             <AddRole {...this.props}/>
-            <AddPermission {...this.props}/>
+            {/* <AddPermission {...this.props}/> */}
           </Col>
         </Row>
 

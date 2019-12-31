@@ -23,7 +23,7 @@ import DeleteModal from "../Common/Modals/DeleteModal";
 class Complaints extends Component {
 
   state = {
-    name: "",
+    description: "",
     page: 0,
     totalPages: 0,
     isLoading: true
@@ -66,9 +66,9 @@ class Complaints extends Component {
 
     const params = qs.parse(search);
 
-    if (params.name) {
+    if (params.description) {
       this.setState({
-        name: params.name
+        description: params.description
       });
     }
 
@@ -115,7 +115,7 @@ class Complaints extends Component {
 
       return (<tr key={m.id}>
         <td>{m.id}</td>
-        <td>{m.description}</td>
+        <td>{m.description.substring(0,80)}...</td>
         <td>{m.type}</td>
         <td>{m.status}</td>
         {this.renderEditCell(false, m)}
@@ -164,21 +164,21 @@ class Complaints extends Component {
               <CardHeader>
                 <Row>
                   <Col md="2">
-                    <i className="fa fa-align-justify" /> Tags - Page {page} of {totalPages}
+                    <i className="fa fa-align-justify" /> Complains - Page {page} of {totalPages}
                   </Col>
 
                   <Col md="1.5">
-                    <CreateComplaint {...this.props} />
+                    {/* <CreateComplaint {...this.props} /> */}
                   </Col>
 
                   <Col md="5">
                     <InputGroup>
 
-                      <Input type="text" placeholder="Name" name="name" onChange={this.onChange} value={this.state.name} />
+                      {/* <Input type="text" placeholder="Description" name="description" onChange={this.onChange} value={this.state.description} />
 
                       <InputGroupAddon addonType="append">
                         <Button type="button" color="warning" onClick={this.filter}><i className="fa fa-filter" /> Filter</Button>
-                      </InputGroupAddon>
+                      </InputGroupAddon> */}
 
                     </InputGroup>
                   </Col>

@@ -78,19 +78,8 @@ class EditUser extends Component {
           <ModalBody>
 
             <FormGroup>
-              <Row>
-                <Col xs="12" sm="6">
-                  <Label htmlFor="name">Name</Label>
-                  <Input type="text" name="name" placeholder="Name" value={this.state.name} onChange={this.onChange} />
-                </Col>
-                <Col xs="12" sm="6">
-                  <Label htmlFor="defaultPaymentMethod">Payment Method</Label>
-                  <Input type="select" name="defaultPaymentMethod" onChange={this.onChange} value={this.state.defaultPaymentMethod}>
-                    {this.props.paymentMethods.map(p => <option key={p.key} value={p.key} >{p.value}</option>)}
-                  </Input>
-                </Col>
-              </Row>
-
+              <Label htmlFor="name">Name</Label>
+              <Input type="text" name="name" placeholder="Name" value={this.state.name} onChange={this.onChange} />
             </FormGroup>
 
             <FormGroup>
@@ -119,31 +108,8 @@ class EditUser extends Component {
             </FormGroup>
 
             <FormGroup>
-
-              <Row>
-                <Col xs="12" sm="6">
-                  <Label>Number</Label>
+            <Label>Number</Label>
                   <Input type="number" name="number" placeholder="Number" onChange={this.onChange} value={this.state.number}  />
-                </Col>
-                <Col xs="12" sm="6">
-                  <Label>Points</Label>
-                  <Input value={this.state.points} disabled />
-                </Col>
-              </Row>
-            </FormGroup>
-
-            <FormGroup>
-
-              <Row>
-                <Col xs="12" sm="6">
-                  <Label>Referral Code</Label>
-                  <Input value={this.state.ref_code} disabled />
-                </Col>
-                <Col xs="12" sm="6">
-                  <Label>No of Referrals</Label>
-                  <Input value={(this.state.referral)?this.state.referral:""} disabled />
-                </Col>
-              </Row>
             </FormGroup>
 
           </ModalBody>

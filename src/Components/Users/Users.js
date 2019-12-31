@@ -155,7 +155,6 @@ class Users extends Component {
         <td>{m.id}</td>
         <td>{m.name}</td>
         <td>{m.number}</td>
-        <td>{m.points}</td>
         {this.renderRolesCell(false,m)}
         <td><BooleanBadge boolean={m.numberVerified}/></td>
         <td><BooleanBadge boolean={m.isActive}/></td>
@@ -231,7 +230,6 @@ class Users extends Component {
                     <th>ID</th>
                     <th>Name</th>
                     <th>Number</th>
-                    <th>Points</th>
                     {this.renderRolesCell()}
                     <th>Number Verified</th>
                     <th>Active</th>
